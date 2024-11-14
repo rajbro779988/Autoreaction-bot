@@ -44,9 +44,9 @@ help - To get help how to use bot
 <details><summary>Tap On Me For Credit</summary>
 
 
-💝 Credit Goes To [CodeXBots](https://github.com/CodeXBots)
+💝 Credit Goes To [CodeXBots]()
 
-💘 Base Repo Credit [TheCaduceus](https://github.com/TheCaduceus)
+💘 Base Repo Credit [TheCaduceus]()
 </details>
 
 ### 💕 CONTACT DEVELOPER
