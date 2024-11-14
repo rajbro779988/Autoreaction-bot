@@ -1,5 +1,5 @@
 <h1 align="center">
- <b><a href="https://youtu.be/SJH70YI9GDg" target="/blank">Auto Reaction Bot</a>
+ <b><a href="https://t.me/sb_reactionbot" target="/blank">Auto Reaction Bot</a>
 </h1>
 
 <p align="center">🩷 Thanks for Being Here 🩷</p>
@@ -15,7 +15,7 @@
 - work in both channels & groups
 - Fully modified repo
 - Deploy To Koyeb + Heroku + Railway.
-- [Developer support](https://telegram.me/CodeXSupport) 24x7
+- [Developer support](https://t.me/+Vegv963Nf2kzYzBl) 24x7
 </details>
 
 
@@ -23,9 +23,9 @@
 
 <details><summary>Tap On Me For Environment Variable</summary>
 
-* `API_ID` - Get From [Here](https://youtu.be/RdMY6Lqfi9w)
-* `API_HASH` - Get From [Here](https://youtu.be/RdMY6Lqfi9w)
-* `BOT_TOKEN` - Get From [BotFather](https://youtu.be/aJILCCXfNVM)
+* `API_ID` - Get From [Here](https://telegram.me/sb_botz_update)
+* `API_HASH` - Get From [Here](https://telegram.me/sb_botz_update)
+* `BOT_TOKEN` - Get From [BotFather](https://telegram.me/BotFather)
 * `BOT_USERNAME` - Username of your Telegram bot without '@'
 </details>
 </b>
@@ -51,11 +51,8 @@ help - To get help how to use bot
 
 ### 💕 CONTACT DEVELOPER
 
-- [Rahul](https://telegram.me/CodeXBro)
+- [Raj Verma](https://telegram.me/Your_rjv)
 
-### ☕ BUY ME A COFFEE
-- [PayPal](https://paypal.me/RahulReviews)
-- [UPI](https://codexbots.github.io/Donate)
 
 ### 📌 NOTE
 
