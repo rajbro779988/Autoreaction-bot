@@ -1,12 +1,12 @@
 from os import environ as env
 
 class Telegram:
-    API_ID = int(env.get("API_ID", ""))
-    API_HASH = env.get("API_HASH", "")
-    BOT_TOKEN = env.get("BOT_TOKEN", "")
-    FSUB_ID = int(env.get("FSUB_ID", "-1009876543210"))  #Add Your Channel Id
+    API_ID = int(env.get("API_ID", "14680661"))
+    API_HASH = env.get("API_HASH", "166f6e394021081c5cdb41c92344deb7")
+    BOT_TOKEN = env.get("BOT_TOKEN", "7155858303:AAFgpH-qpBainkm41okcN5UQQ4qlcEX9P-U")
+    FSUB_ID = int(env.get("FSUB_ID", "-1001710807965"))  #Add Your Channel Id
     FSUB = bool(env.get("FSUB", True))
-    BOT_USERNAME = env.get("BOT_USERNAME", "ReactGenieBot")
+    BOT_USERNAME = env.get("BOT_USERNAME", "Sb_reactionbot")
     EMOJIS = [
         "👍", "👎", "❤", "🔥", 
         "🥰", "👏", "😁", "🤔",
