@@ -4,6 +4,8 @@ class Telegram:
     API_ID = int(env.get("API_ID", ""))
     API_HASH = env.get("API_HASH", "")
     BOT_TOKEN = env.get("BOT_TOKEN", "")
+    FSUB_ID = int(env.get("FSUB_ID", "-1009876543210"))  #Add Your Channel Id
+    FSUB = bool(env.get("FSUB", True))
     BOT_USERNAME = env.get("BOT_USERNAME", "ReactGenieBot")
     EMOJIS = [
         "👍", "👎", "❤", "🔥", 
