@@ -2,7 +2,7 @@ from pyrogram import filters, enums
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from bot import TelegramBot
 from bot.config import Telegram as tg
-from bot.static import *
+from bot.script import *
 from bot.plugins.fsub import get_fsub
 
 @TelegramBot.on_message(
@@ -21,18 +21,18 @@ async def start_command(_, msg: Message):
             return
     return await msg.reply_photo(
         photo=tg.SB_PIC,
-        caption=WelcomeText % {'first_name': msg.from_user.first_name if msg.from_user else 'Anonymous'}
+        caption=START_TXT.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text='⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'https://telegram.me/{tg.BOT_USERNAME}?startgroup=botstart')
+                    InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'https://telegram.me/{tg.BOT_USERNAME}?startgroup=botstart')
                 ],
                 [
-                    InlineKeyboardButton(text='• ᴜᴩᴅᴀᴛᴇꜱ •', url='https://t.me/SB_Botz_Update'),
-                    InlineKeyboardButton(text='• ꜱᴜᴩᴩᴏʀᴛ •', url='https://t.me/+Vegv963Nf2kzYzBl')
+                    InlineKeyboardButton('• ᴜᴩᴅᴀᴛᴇꜱ •', url='https://t.me/SB_Botz_Update'),
+                    InlineKeyboardButton('• ꜱᴜᴩᴩᴏʀᴛ •', url='https://t.me/+Vegv963Nf2kzYzBl')
                 ],
                 [
-                    InlineKeyboardButton(text='⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ⇆', url=f'https://telegram.me/{tg.BOT_USERNAME}?startchannel=botstart')
+                    InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ⇆', url=f'https://telegram.me/{tg.BOT_USERNAME}?startchannel=botstart')
                 ]
             ]
         ),
@@ -55,13 +55,13 @@ async def send_emojis(_, msg: Message):
         if not is_participant:
             return
     return await msg.reply(
-        text=Help,
+        text=HELP_TXT,
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text='👨‍💻 ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/SB_Botz_Update'),
-                    InlineKeyboardButton(text='💥 ꜱᴜᴩᴩᴏʀᴛ', url='https://t.me/+Vegv963Nf2kzYzBl')
+                    InlineKeyboardButton('👨‍💻 ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/SB_Botz_Update'),
+                    InlineKeyboardButton('💥 ꜱᴜᴩᴩᴏʀᴛ', url='https://t.me/+Vegv963Nf2kzYzBl')
                 ]
             ]
         ),
