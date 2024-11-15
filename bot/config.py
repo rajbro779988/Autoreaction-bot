@@ -6,7 +6,7 @@ class Telegram:
     BOT_TOKEN = env.get("BOT_TOKEN", "7155858303:AAFgpH-qpBainkm41okcN5UQQ4qlcEX9P-U") #Add Bot Token, get from botfather
     FSUB_ID = int(env.get("FSUB_ID", "-1001710807965"))  #Add Your FSub Channel Id
     FSUB = bool(env.get("FSUB", True)) #Keep True If U Want Force Subscribe 
-    SB_PIC = env.get("SB_PIC", "https://envs.sh/j_6.jpg").split() #Add Link For Start Cmd Pic
+    SB_PIC = env.get("SB_PIC", "https://envs.sh/j_6.jpg") #Add Link For Start Cmd Pic
     BOT_USERNAME = env.get("BOT_USERNAME", "Sb_reactionbot") #Add Bot Username Without @
     EMOJIS = [
         "👍", "👎", "❤", "🔥", 
