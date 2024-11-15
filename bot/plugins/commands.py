@@ -25,18 +25,20 @@ async def start_command(_, msg: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text='⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'https://telegram.me/{Telegram.BOT_USERNAME}?startgroup=botstart')
+                    InlineKeyboardButton(text='⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'https://telegram.me/{tg.BOT_USERNAME}?startgroup=botstart')
                 ],
                 [
                     InlineKeyboardButton(text='• ᴜᴩᴅᴀᴛᴇꜱ •', url='https://t.me/SB_Botz_Update'),
                     InlineKeyboardButton(text='• ꜱᴜᴩᴩᴏʀᴛ •', url='https://t.me/+Vegv963Nf2kzYzBl')
                 ],
                 [
-                    InlineKeyboardButton(text='⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ⇆', url=f'https://telegram.me/{Telegram.BOT_USERNAME}?startchannel=botstart')
+                    InlineKeyboardButton(text='⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ⇆', url=f'https://telegram.me/{tg.BOT_USERNAME}?startchannel=botstart')
                 ]
             ]
-        )
+        ),
+        disable_web_page_preview=True,
     )
+    
 
 @TelegramBot.on_message(
     filters.command('help')
@@ -62,5 +64,7 @@ async def send_emojis(_, msg: Message):
                     InlineKeyboardButton(text='💥 ꜱᴜᴩᴩᴏʀᴛ', url='https://t.me/+Vegv963Nf2kzYzBl')
                 ]
             ]
-        )
+        ),
+        disable_web_page_preview=True,
     )
+ 
