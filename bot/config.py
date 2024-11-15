@@ -1,7 +1,7 @@
 from os import environ as env
 
 class Telegram:
-    API_ID = int(env.get("API_ID", "14680661")). #TG API ID
+    API_ID = int(env.get("API_ID", "14680661")) #TG API ID
     API_HASH = env.get("API_HASH", "166f6e394021081c5cdb41c92344deb7") #TG API HASH
     BOT_TOKEN = env.get("BOT_TOKEN", "7155858303:AAFgpH-qpBainkm41okcN5UQQ4qlcEX9P-U") #Add Bot Token, get from botfather
     FSUB_ID = int(env.get("FSUB_ID", "-1001710807965"))  #Add Your FSub Channel Id
