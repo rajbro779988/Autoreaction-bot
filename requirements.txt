@@ -1,3 +1,2 @@
-pyrofork==2.3.48
-pyrogram==2.0.106
+https://codeload.github.com/KurimuzonAkuma/pyrogram/zip/refs/heads/dev
 tgcrypto
