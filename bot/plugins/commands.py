@@ -1,4 +1,4 @@
-from pyrogram import filters
+from pyrogram import filters, enums
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from bot import TelegramBot
 from bot.config import Telegram as tg
@@ -19,9 +19,9 @@ async def start_command(_, msg: Message):
         is_participant = await get_fsub(client, message)
         if not is_participant:
             return
-    return await msg.reply(
-        text=WelcomeText % {'first_name': msg.from_user.first_name if msg.from_user else 'Anonymous'},
-        quote=True,
+    return await msg.reply_photo(
+        photo=tg.SB_PIC,
+        caption=WelcomeText % {'first_name': msg.from_user.first_name if msg.from_user else 'Anonymous'}
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -36,7 +36,7 @@ async def start_command(_, msg: Message):
                 ]
             ]
         ),
-        disable_web_page_preview=True,
+        parse_mode=enums.ParseMode.HTML
     )
     
 
